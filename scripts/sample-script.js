@@ -2,8 +2,8 @@ const hre = require("hardhat");
 
 async function main() {
   
-  const Contract = await hre.ethers.getContractFactory("Contract");
-  const contract = await Contract.deploy();
+  const Contract = await hre.ethers.getContractFactory("Cards");
+  const contract = await Contract.deploy("ipfs://QmbXrf7XoipafXZcNmNAjE6wFHTa5ii1Wa5r6dYzzPgygR/");
 
   await contract.deployed();
 
